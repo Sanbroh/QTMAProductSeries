@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, Response, request, request, url_for, flash, redirect
+from flask import Flask, session, render_template, Response, request, url_for, flash, redirect
 
 app = Flask(__name__)
 appName = "QTMA Product Series"
