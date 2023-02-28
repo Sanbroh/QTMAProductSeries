@@ -1,22 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <form method="post" id="prompt-form">
-    <label for="prompt">&#8594</label>
-    <input type="text" name="prompt"
-           placeholder="What's your idea? (ex. bouncy castle for llamas)"
-           value="{{ request.form['prompt'] }}" id="prompt"></input><br><br>
-    <label for="logo">&#8594</label>
-    <input type="text" name="logo"
-           placeholder="Describe your perfect logo! (ex. smiley llama)"
-           value="{{ request.form['logo'] }}" id="logo"></input><br><br>
-   <label for="length">&#8594</label>
-   <input type="text" name="length"
-          placeholder="How long is your pitch (mins)? (ex. 5 minutes)"
-          value="{{ request.form['length'] }}" id="length"></input><br><br>
-    <button type="submit" onclick="load(event)">Generate Pitch</button>
-  </form>
-  <div id="error">
-    <p>Generating...</p>
-  </div>
+  <h3><a href="{{ url_for('fullstack') }}">Full-Stack</a><h3>
+  <h3><a href="{{ url_for('dataop') }}">Data Optimization</a><h3>
 {% endblock %}
